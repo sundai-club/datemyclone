@@ -7,33 +7,33 @@ import { Button } from '@/components/ui/button';
 
 const clones = [
   {
+    id: 1,
     name: "Sophie",
     age: 28,
-    occupation: "Tech Entrepreneur",
-    interests: ["AI & Tech", "Yoga", "Travel", "Photography"],
-    bio: "Passionate about building the future with AI. Love exploring new places and capturing moments through my lens.",
-    compatibility: 95,
     image: "/images/clones/sophie.jpg",
+    bio: "AI researcher by day, amateur astronomer by night. Looking for someone to explore both the depths of consciousness and the cosmos with.",
+    interests: ["AI Ethics", "Stargazing", "Philosophy", "Rock Climbing"],
+    compatibility: 95,
     gradient: "from-blue-500 to-purple-500",
   },
   {
+    id: 2,
     name: "James",
-    age: 32,
-    occupation: "Data Scientist",
-    interests: ["Machine Learning", "Rock Climbing", "Music", "Coffee"],
-    bio: "Using data to solve real-world problems. When not coding, you'll find me scaling walls or brewing the perfect cup.",
-    compatibility: 88,
+    age: 31,
     image: "/images/clones/james.jpg",
+    bio: "Tech entrepreneur with a passion for sustainable innovation. Seeking a partner to brainstorm world-changing ideas over coffee.",
+    interests: ["Technology", "Sustainability", "Coffee Tasting", "Tennis"],
+    compatibility: 88,
     gradient: "from-purple-500 to-pink-500",
   },
   {
+    id: 3,
     name: "Emma",
-    age: 26,
-    occupation: "UX Designer",
-    interests: ["Art", "Hiking", "Food", "Psychology"],
-    bio: "Creating beautiful, user-centered experiences. Believer in mindfulness and the power of good design.",
-    compatibility: 92,
+    age: 29,
     image: "/images/clones/emma.jpg",
+    bio: "Quantum computing researcher who loves classical piano. Looking for someone to share both scientific and musical harmonies.",
+    interests: ["Quantum Physics", "Piano", "Hiking", "Modern Art"],
+    compatibility: 92,
     gradient: "from-pink-500 to-red-500",
   },
 ];
@@ -129,8 +129,7 @@ export const CloneExamples = () => {
                       <h3 className="text-3xl font-bold text-white mb-2">
                         {clones[activeIndex].name}, {clones[activeIndex].age}
                       </h3>
-                      <p className="text-xl text-blue-100 mb-4">{clones[activeIndex].occupation}</p>
-                      <p className="text-blue-100 mb-6">{clones[activeIndex].bio}</p>
+                      <p className="text-xl text-blue-100 mb-4">{clones[activeIndex].bio}</p>
                       
                       <div className="space-y-4">
                         <div>

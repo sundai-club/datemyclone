@@ -35,58 +35,39 @@ export const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <motion.div 
-            className="flex-1 text-center lg:text-left"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-              Skip the <span className="text-gradient">Small Talk</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-xl mx-auto lg:mx-0">
-              Let your AI clone handle the first date while you focus on what matters
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg"
-                className="glass-button text-lg px-8 py-6"
-                onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get Started
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="glass-button text-lg px-8 py-6"
-              >
-                Watch Demo
-              </Button>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="flex-1 relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="relative w-full aspect-square max-w-xl mx-auto">
-              <Image
-                src="/images/hero-illustration.png"
-                alt="AI Dating Assistant"
-                fill
-                className="object-contain animate-float"
-                priority
-              />
-            </div>
-          </motion.div>
-        </div>
+        <motion.div 
+          className="max-w-4xl mx-auto text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            Skip the <span className="text-gradient">Small Talk</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            Let your AI clone handle the first date while you focus on what matters
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg"
+              className="glass-button text-lg px-8 py-6"
+              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get Started
+            </Button>
+            <Button 
+              size="lg"
+              variant="outline"
+              className="glass-button text-lg px-8 py-6"
+            >
+              Watch Demo
+            </Button>
+          </div>
+        </motion.div>
 
         {/* Stats */}
         <motion.div 
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}

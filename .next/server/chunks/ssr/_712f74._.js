@@ -230,10 +230,8 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/ui/button.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 'use client';
-;
 ;
 ;
 ;
@@ -289,121 +287,75 @@ const HeroSection = ()=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto px-4 py-20 relative z-10",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col lg:flex-row items-center justify-between gap-12",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        className: "max-w-4xl mx-auto text-center",
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.8
+                        },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "flex-1 text-center lg:text-left",
-                                initial: {
-                                    opacity: 0,
-                                    y: 20
-                                },
-                                animate: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                transition: {
-                                    duration: 0.8
-                                },
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-5xl md:text-7xl font-bold mb-6 text-white",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-5xl md:text-7xl font-bold mb-6 text-white",
-                                        children: [
-                                            "Skip the ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gradient",
-                                                children: "Small Talk"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/landing/HeroSection.tsx",
-                                                lineNumber: 46,
-                                                columnNumber: 24
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 45,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xl md:text-2xl mb-8 text-blue-100 max-w-xl mx-auto lg:mx-0",
-                                        children: "Let your AI clone handle the first date while you focus on what matters"
+                                    "Skip the ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-gradient",
+                                        children: "Small Talk"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 48,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-col sm:flex-row gap-4 justify-center lg:justify-start",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                size: "lg",
-                                                className: "glass-button text-lg px-8 py-6",
-                                                onClick: ()=>document.getElementById('how-it-works')?.scrollIntoView({
-                                                        behavior: 'smooth'
-                                                    }),
-                                                children: "Get Started"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/landing/HeroSection.tsx",
-                                                lineNumber: 52,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                size: "lg",
-                                                variant: "outline",
-                                                className: "glass-button text-lg px-8 py-6",
-                                                children: "Watch Demo"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/landing/HeroSection.tsx",
-                                                lineNumber: 59,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        lineNumber: 45,
+                                        columnNumber: 22
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/landing/HeroSection.tsx",
+                                lineNumber: 44,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto",
+                                children: "Let your AI clone handle the first date while you focus on what matters"
+                            }, void 0, false, {
+                                fileName: "[project]/components/landing/HeroSection.tsx",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col sm:flex-row gap-4 justify-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                        size: "lg",
+                                        className: "glass-button text-lg px-8 py-6",
+                                        onClick: ()=>document.getElementById('how-it-works')?.scrollIntoView({
+                                                behavior: 'smooth'
+                                            }),
+                                        children: "Get Started"
+                                    }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
                                         lineNumber: 51,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                        size: "lg",
+                                        variant: "outline",
+                                        className: "glass-button text-lg px-8 py-6",
+                                        children: "Watch Demo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/landing/HeroSection.tsx",
+                                        lineNumber: 58,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/landing/HeroSection.tsx",
-                                lineNumber: 39,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "flex-1 relative",
-                                initial: {
-                                    opacity: 0,
-                                    scale: 0.8
-                                },
-                                animate: {
-                                    opacity: 1,
-                                    scale: 1
-                                },
-                                transition: {
-                                    duration: 0.8,
-                                    delay: 0.2
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative w-full aspect-square max-w-xl mx-auto",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/images/hero-illustration.png",
-                                        alt: "AI Dating Assistant",
-                                        fill: true,
-                                        className: "object-contain animate-float",
-                                        priority: true
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 76,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/landing/HeroSection.tsx",
-                                    lineNumber: 75,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/landing/HeroSection.tsx",
-                                lineNumber: 69,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -413,7 +365,7 @@ const HeroSection = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "mt-20 grid grid-cols-1 md:grid-cols-3 gap-8",
+                        className: "mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto",
                         initial: {
                             opacity: 0,
                             y: 20
@@ -447,7 +399,7 @@ const HeroSection = ()=>{
                                         children: stat.number
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -455,18 +407,18 @@ const HeroSection = ()=>{
                                         children: stat.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/landing/HeroSection.tsx",
-                                lineNumber: 99,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/landing/HeroSection.tsx",
-                        lineNumber: 88,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this)
                 ]
@@ -479,7 +431,7 @@ const HeroSection = ()=>{
                 className: "absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent"
             }, void 0, false, {
                 fileName: "[project]/components/landing/HeroSection.tsx",
-                lineNumber: 108,
+                lineNumber: 89,
                 columnNumber: 7
             }, this)
         ]
@@ -738,48 +690,48 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 const clones = [
     {
+        id: 1,
         name: "Sophie",
         age: 28,
-        occupation: "Tech Entrepreneur",
-        interests: [
-            "AI & Tech",
-            "Yoga",
-            "Travel",
-            "Photography"
-        ],
-        bio: "Passionate about building the future with AI. Love exploring new places and capturing moments through my lens.",
-        compatibility: 95,
         image: "/images/clones/sophie.jpg",
+        bio: "AI researcher by day, amateur astronomer by night. Looking for someone to explore both the depths of consciousness and the cosmos with.",
+        interests: [
+            "AI Ethics",
+            "Stargazing",
+            "Philosophy",
+            "Rock Climbing"
+        ],
+        compatibility: 95,
         gradient: "from-blue-500 to-purple-500"
     },
     {
+        id: 2,
         name: "James",
-        age: 32,
-        occupation: "Data Scientist",
-        interests: [
-            "Machine Learning",
-            "Rock Climbing",
-            "Music",
-            "Coffee"
-        ],
-        bio: "Using data to solve real-world problems. When not coding, you'll find me scaling walls or brewing the perfect cup.",
-        compatibility: 88,
+        age: 31,
         image: "/images/clones/james.jpg",
+        bio: "Tech entrepreneur with a passion for sustainable innovation. Seeking a partner to brainstorm world-changing ideas over coffee.",
+        interests: [
+            "Technology",
+            "Sustainability",
+            "Coffee Tasting",
+            "Tennis"
+        ],
+        compatibility: 88,
         gradient: "from-purple-500 to-pink-500"
     },
     {
+        id: 3,
         name: "Emma",
-        age: 26,
-        occupation: "UX Designer",
-        interests: [
-            "Art",
-            "Hiking",
-            "Food",
-            "Psychology"
-        ],
-        bio: "Creating beautiful, user-centered experiences. Believer in mindfulness and the power of good design.",
-        compatibility: 92,
+        age: 29,
         image: "/images/clones/emma.jpg",
+        bio: "Quantum computing researcher who loves classical piano. Looking for someone to share both scientific and musical harmonies.",
+        interests: [
+            "Quantum Physics",
+            "Piano",
+            "Hiking",
+            "Modern Art"
+        ],
+        compatibility: 92,
         gradient: "from-pink-500 to-red-500"
     }
 ];
@@ -972,18 +924,10 @@ const CloneExamples = ()=>{
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "text-xl text-blue-100 mb-4",
-                                                                        children: clones[activeIndex].occupation
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                        lineNumber: 132,
-                                                                        columnNumber: 23
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-blue-100 mb-6",
                                                                         children: clones[activeIndex].bio
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                        lineNumber: 133,
+                                                                        lineNumber: 132,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -996,7 +940,7 @@ const CloneExamples = ()=>{
                                                                                         children: "Interests"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                        lineNumber: 137,
+                                                                                        lineNumber: 136,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1006,18 +950,18 @@ const CloneExamples = ()=>{
                                                                                                 children: interest
                                                                                             }, interest, false, {
                                                                                                 fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                                lineNumber: 140,
+                                                                                                lineNumber: 139,
                                                                                                 columnNumber: 31
                                                                                             }, this))
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                        lineNumber: 138,
+                                                                                        lineNumber: 137,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                lineNumber: 136,
+                                                                                lineNumber: 135,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1027,7 +971,7 @@ const CloneExamples = ()=>{
                                                                                         children: "AI Compatibility"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                        lineNumber: 151,
+                                                                                        lineNumber: 150,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1046,12 +990,12 @@ const CloneExamples = ()=>{
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                            lineNumber: 153,
+                                                                                            lineNumber: 152,
                                                                                             columnNumber: 29
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                        lineNumber: 152,
+                                                                                        lineNumber: 151,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1062,19 +1006,19 @@ const CloneExamples = ()=>{
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                        lineNumber: 160,
+                                                                                        lineNumber: 159,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                                lineNumber: 150,
+                                                                                lineNumber: 149,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                        lineNumber: 135,
+                                                                        lineNumber: 134,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
@@ -1088,7 +1032,7 @@ const CloneExamples = ()=>{
                                                                 children: "View Full Profile"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/CloneExamples.tsx",
-                                                                lineNumber: 165,
+                                                                lineNumber: 164,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
@@ -1126,12 +1070,12 @@ const CloneExamples = ()=>{
                                         className: `w-3 h-3 rounded-full transition-all ${index === activeIndex ? "bg-white scale-125" : "bg-white/30"}`
                                     }, index, false, {
                                         fileName: "[project]/components/landing/CloneExamples.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 175,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/CloneExamples.tsx",
-                                lineNumber: 174,
+                                lineNumber: 173,
                                 columnNumber: 11
                             }, this)
                         ]
