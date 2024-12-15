@@ -1,32 +1,51 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export const CallToAction = () => {
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Generate random values only once after mounting
+  const backgroundElements = mounted ? Array.from({ length: 30 }).map(() => ({
+    width: Math.random() * 200 + 50,
+    height: Math.random() * 200 + 50,
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
+    yOffset: Math.random() * 100 - 50,
+    duration: Math.random() * 5 + 5,
+  })) : [];
+
   return (
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-30">
-          {Array.from({ length: 30 }).map((_, i) => (
+          {mounted && backgroundElements.map((elem, i) => (
             <motion.div
               key={i}
               className="absolute rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
               style={{
-                width: Math.random() * 200 + 50,
-                height: Math.random() * 200 + 50,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                width: elem.width,
+                height: elem.height,
+                left: elem.left,
+                top: elem.top,
                 opacity: 0.1,
               }}
               animate={{
-                y: [0, Math.random() * 100 - 50],
+                y: [0, elem.yOffset],
                 scale: [1, 1.2, 1],
                 opacity: [0.1, 0.2, 0.1],
               }}
               transition={{
-                duration: Math.random() * 5 + 5,
+                duration: elem.duration,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
@@ -60,7 +79,7 @@ export const CallToAction = () => {
                 <Button
                   size="lg"
                   className="glass-button text-lg px-8 py-6 group"
-                  onClick={() => window.location.href = '/auth/signup'}
+                  onClick={() => router.push('/register')}
                 >
                   <span className="mr-2">Get Started</span>
                   <motion.span
@@ -75,6 +94,7 @@ export const CallToAction = () => {
                   size="lg"
                   variant="outline"
                   className="glass-button text-lg px-8 py-6"
+                  onClick={() => router.push('/demo')}
                 >
                   View Demo
                 </Button>

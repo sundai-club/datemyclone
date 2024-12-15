@@ -9,6 +9,9 @@ import {
   primaryKey,
   foreignKey,
   boolean,
+  serial,
+  integer,
+  jsonb,
 } from 'drizzle-orm/pg-core';
 
 export const user = pgTable('User', {
@@ -18,6 +21,26 @@ export const user = pgTable('User', {
 });
 
 export type User = InferSelectModel<typeof user>;
+
+export const userProfile = pgTable('user_profile', {
+  id: serial('id').primaryKey(),
+  userId: text('user_id').notNull().unique(),
+  name: text('name').notNull(),
+  gender: text('gender').notNull(),
+  age: integer('age').notNull(),
+  relationshipGoals: text('relationship_goals').notNull(),
+  genderPreference: text('gender_preference').notNull(),
+  career: text('career').notNull(),
+  heightWeight: text('height_weight').notNull(),
+  interests: text('interests').notNull(),
+  education: text('education').notNull(),
+  onboardingCompleted: boolean('onboarding_completed').notNull().default(false),
+  persona: jsonb('persona'),
+  createdAt: timestamp('created_at').notNull().defaultNow(),
+  updatedAt: timestamp('updated_at').notNull().defaultNow(),
+});
+
+export type UserProfile = InferSelectModel<typeof userProfile>;
 
 export const chat = pgTable('Chat', {
   id: uuid('id').primaryKey().notNull().defaultRandom(),

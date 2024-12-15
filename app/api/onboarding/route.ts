@@ -2,6 +2,10 @@ import { auth } from '@/app/(auth)/auth';
 import { db } from '@/lib/db';
 import { userProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
+import { generatePersona } from '@/lib/generate-persona';
+
+// Load environment variables
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 export async function POST(request: Request) {
   try {
@@ -27,6 +31,37 @@ export async function POST(request: Request) {
       );
     }
 
+    if (!OPENAI_API_KEY) {
+      return new Response(
+        JSON.stringify({ error: 'OpenAI API key not configured' }),
+        {
+          status: 500,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      );
+    }
+
+    // Generate persona based on answers
+    const userAnswers = {
+      name: answers[1],
+      gender: answers[2],
+      age: parseInt(answers[3]),
+      relationshipGoals: answers[4],
+      genderPreference: answers[5],
+      career: answers[6],
+      heightWeight: answers[7],
+      interests: Array.isArray(answers[8]) ? answers[8] : [answers[8]],
+      education: answers[9],
+    };
+
+    const persona = await generatePersona(userAnswers, {
+      apiKey: OPENAI_API_KEY,
+      model: 'gpt-4',
+      temperature: 0.7,
+    });
+
     // Check if profile already exists
     const existingProfile = await db
       .select()
@@ -46,6 +81,7 @@ export async function POST(request: Request) {
       interests: answers[8],
       education: answers[9],
       onboardingCompleted: true,
+      persona: persona,
       updatedAt: new Date(),
     };
 
@@ -63,7 +99,7 @@ export async function POST(request: Request) {
       });
     }
 
-    return new Response(JSON.stringify({ success: true }), {
+    return new Response(JSON.stringify({ success: true, persona }), {
       status: 200,
       headers: {
         'Content-Type': 'application/json',
