@@ -70,12 +70,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$auth$292f$auth$2e$config$2e$ts__$5b$middleware$5d$__$28$ecmascript$29$__["authConfig"]).auth;
 const config = {
-    // Remove '/' from the matcher to make the landing page public
     matcher: [
         '/:id',
         '/api/:path*',
         '/login',
-        '/register'
+        '/register',
+        '/onboarding'
     ]
 };
 }}),
