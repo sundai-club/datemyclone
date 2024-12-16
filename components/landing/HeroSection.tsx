@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen modern-gradient relative overflow-hidden">
+    <section className="min-h-screen modern-gradient relative overflow-hidden flex items-center">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
@@ -34,20 +34,20 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white">
             Skip the <span className="text-gradient">Small Talk</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-12 text-blue-100 max-w-2xl mx-auto">
             Let your AI clone handle the first date while you focus on what matters
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
             <Button 
               size="lg"
               className="glass-button text-lg px-8 py-6"
@@ -63,25 +63,25 @@ export const HeroSection = () => {
               Watch Demo
             </Button>
           </div>
-        </motion.div>
 
-        {/* Stats */}
-        <motion.div 
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          {[
-            { number: "10K+", label: "Active Users" },
-            { number: "95%", label: "Match Rate" },
-            { number: "4.9/5", label: "User Rating" },
-          ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-4xl font-bold text-white mb-2">{stat.number}</h3>
-              <p className="text-blue-100">{stat.label}</p>
-            </div>
-          ))}
+          {/* Stats */}
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            {[
+              { number: "10K+", label: "Active Users" },
+              { number: "95%", label: "Match Rate" },
+              { number: "4.9/5", label: "User Rating" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <h3 className="text-4xl font-bold text-white mb-2">{stat.number}</h3>
+                <p className="text-blue-100">{stat.label}</p>
+              </div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
       

@@ -22,13 +22,22 @@
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 224.3 76.3% 48%;
+  --vibrant-blue: #0504aa;
+  --vibrant-blue-light: #2826c2;
+  --vibrant-blue-lighter: #4a48da;
+  --theme-gradient-start: var(--vibrant-blue);
+  --theme-gradient-end: var(--vibrant-blue-lighter);
   --theme-blue: 217 91% 60%;
   --theme-purple: 250 91% 60%;
-  --theme-gradient-start: hsl(217, 91%, 60%);
-  --theme-gradient-end: hsl(250, 91%, 60%);
+  --beautiful-blue: #3B82F6;
+  --beautiful-blue-light: #60A5FA;
+  --beautiful-blue-lighter: #93C5FD;
   --ocean-blue: #1a4b6e;
   --ocean-blue-light: #2a6b9e;
   --ocean-blue-dark: #0a2b4e;
+  --tropical-blue: #00B4D8;
+  --tropical-blue-light: #48CAE4;
+  --tropical-blue-lighter: #90E0EF;
 }
 
 .ocean-gradient {
@@ -37,8 +46,9 @@
 
 .modern-gradient {
   background: linear-gradient(135deg, 
-    var(--theme-gradient-start),
-    var(--theme-gradient-end)
+    var(--vibrant-blue),
+    var(--vibrant-blue-light),
+    var(--vibrant-blue-lighter)
   );
 }
 

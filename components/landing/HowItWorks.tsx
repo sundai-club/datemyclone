@@ -35,6 +35,12 @@ const steps = [
     icon: "📊",
     gradient: "from-orange-500 to-yellow-500",
   },
+  {
+    title: "Meet Your Match",
+    description: "Meet your perfect match and skip straight to a deeper connection",
+    icon: "💫",
+    gradient: "from-yellow-500 to-green-500",
+  },
 ];
 
 const Step = ({ step, index }: { step: typeof steps[0]; index: number }) => {
@@ -89,11 +95,11 @@ export const HowItWorks = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Let AI technology revolutionize your dating experience in five simple steps
+            Let AI technology revolutionize your dating experience in six simple steps
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {steps.map((step, index) => (
             <Step key={index} step={step} index={index} />
           ))}
